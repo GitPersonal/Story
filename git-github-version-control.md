@@ -24,14 +24,34 @@ After doing `git add {filename}` type `git status` to see the change.
 
 The file added is now green.
 
-## Git commit
+## `Git commit`
 
 Type `git commit -m "initial commit message"`
 
+## `Git console`
 You will now see the Author or person who made the commit and the time of the commit.
 
 Adding new files to the stagging area. Type `git status` and you'll see the untracked files in red.
 
 add these files by typing `git add {file name}` and add the next file by adding the `git add {filename}` of the next file. Or you can just type `git add .`
 This will add all the files.
- 
+
+Now commit the two new files. `git commit -m "two new files"`
+
+## Dealing with errors saved to file but not yet committed
+
+Lets say I made some changes to my `chapter 3 txt file` and saved the file and closed it.
+
+Type `git status` and see the file that hasn't been commited. It has been modified and it'll be in red text.
+
+## `Git diff`
+
+We can use a git command to see the differences between the current file and the last saved point in our git repository
+
+To do that type `git diff {file name}`
+
+The red is what was deleted or changes and the green is what was added.
+## `Git checkout`
+
+If you want to rollback to the previous version type `git checkout {file name}`
+

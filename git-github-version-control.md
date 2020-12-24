@@ -28,7 +28,7 @@ The file added is now green.
 
 Type `git commit -m "initial commit message"`
 
-## `Git console`
+## `Git log`
 You will now see the Author or person who made the commit and the time of the commit.
 
 Adding new files to the stagging area. Type `git status` and you'll see the untracked files in red.
@@ -55,3 +55,69 @@ The red is what was deleted or changes and the green is what was added.
 
 If you want to rollback to the previous version type `git checkout {file name}`
 
+## `Git Hub`
+
+Login to my `Github` account.
+
+click on the `plus` sign to create a new repositoty.
+
+![plus sign repo](plus-sign.png)
+
+Give it a `repository name` and a description
+
+Select `Public`
+
+Don't need to initialize this repository yet.
+
+Click `Create repository`
+
+--- 
+
+We will use these two lines to push our code
+
+`...or push an existing repository from the command line`
+
+![plus sign repo](existing-epository.png)
+
+
+To push a repository I have locally, I'm going to use copy the `Quick setup` button.
+This will allow me to push on to the remote depository
+
+![plus sign repo](quick-setup1.png)
+![plus sign repo](quick-setup-button.png)
+
+---
+
+Jump back over to Terminal to make sure I'm in the `working directory`
+and `git log` to see what previous commits we got. 
+
+
+## `Git remote add origin {url}`
+
+Do this when trying to push from local working repository to Github the first time so that you can push your code.
+
+Now I want to commit all my transfers so to do that I type `git remote add origin {url of remote depository on github}`
+
+## `Git push -u origin master`
+
+To push my code the first time to the repo type `git push -u origin master`
+
+This pushes the local repository to the remote repository using the `-u` flag or the `-u option` which links your remote and local repositories and then push it towards the `remote` called **`origin`** and the `branch` called **`master`**
+
+`origin` is **`Name of Remote`** and `master` is **`Name of Branch`**
+
+Master is the default branch or the main branch.
+
+---
+
+In Github you can click on `insights` and `network` to see the master branch.
+
+Head back to the main page and select `<>Code` tab and click `commits` you can see the versions and if you click on it you can see the version of the changes of it.
+
+    * git add
+
+    * git commit -m "message for commit"
+
+    * git pull
+
+    * git push
